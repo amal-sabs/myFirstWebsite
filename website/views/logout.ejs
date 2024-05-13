@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Logout Page</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+                
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <p><%= message %></p>
+            </div>
+
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

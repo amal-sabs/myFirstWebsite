@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adopt a Dog/Cat</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="stylesheetwebsite.css">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <h1>Potential Buddies</h1>
+                <div class = "pets">
+                    <% if (filteredPets.length > 0) { %>
+                        <ul>
+                            <% filteredPets.forEach(pet => { %>
+                                <li style = "list-style-type:none">
+                                    <strong>Description: </strong> <%= pet.description %><br>
+                                    <strong>Breed: </strong> <%= pet.breed %><br>
+                                    <strong>Age: </strong> <%=pet.age %><br>
+                                    <strong>Gender: </strong> <%=pet.gender %><br>
+                                    <strong>Owner: </strong> <%= pet.owner %><br>
+                                    <strong>Email: </strong> <%= pet.email %><br>
+                                    <hr>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    <% } else { %>
+                        <p>No pets found.</p>
+                    <% } %>
+                </div>
+            </div>
+
+                        
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

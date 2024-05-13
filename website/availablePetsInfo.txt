@@ -1,0 +1,8 @@
+1:cat:Siamese:Less than 2:Male:True:True:False:user:loser@email.com:It's a cat
+2:cat:Tabby:Between 2 and 8:Female:False:False:False:user2:someone@email.com:It's a cat
+3:dog:Bulldog:Between 2 and 8:Male:False:True:False:user3:someoneelse@email.com:It's a dog
+4:dog:Golden Retriever:Less than 2:Female:True:False:True:user4:another@email.com:It's a dog
+5:cat:Persian:Between 8 and 14:Female:false:false:false:apple apple:amalsabsabi12@gmail.com:
+6:cat:British Shorthair:Less than 2:Male:false:True:True:apple apple:amalsabsabi12@gmail.com:
+7:cat:Persian:Between 8 and 14:Female:True:True:True:apple1 apple1:amalsabsabi@icloud.com:
+8:dog:Bulldog:Between 2 and 8:Male:false:false:false:orange kiwi:ricecake@gmail.con:

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Cat Care</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <p>Welcoming a cat into a new environment can be very challenging. 
+                    From litter box issues to destructive scratching, most common behavior problems can be solved by making your cat feel safe, secure and stimulated. 
+                    Until you've settled into a routine, be patient and use our tips to help your pet adjust to the “new normal” and build a trusting bond with you.
+                    <a href = "https://www.humanesociety.org/caring-your-cat" target = "_blank">The Humane Society of the United Society</a> offers a many great resources on how to properly care for your cat of any age.
+                </p>
+                <p>You can also find more general instructions on to care for a cat by clicking on the following links:</p>
+                <p><a href ="https://www.aspca.org/pet-care/cat-care/general-cat-care" target = "_blank">General Cat Care by ASPCA</a></p>
+                <p><a href = "https://www.wikihow.com/Take-Care-of-a-Cat" target = "_blank">How to ake Care of a Cat by WikiHow</a></p>
+                <p><a href = "https://www.rspca.org.uk/adviceandwelfare/pets/cats" target = "_blank">Caring for cats and kittens by RSPCA</a></p>
+            </div>
+
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

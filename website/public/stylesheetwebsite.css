@@ -1,0 +1,226 @@
+body{
+    margin:0px;
+    padding-top: 8vw;
+    background-image: url(https://img.freepik.com/free-vector/cute-animal-pattern-background-wallpaper-paw-print-vector-illustration_53876-146422.jpg?w=900&t=st=1707584149~exp=1707584749~hmac=5bd976ddc691bc900d05e4e070813b201f76889fd97a5673e9f68938f71a4026);
+    width:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 8vw;
+}
+
+.container{
+    display: grid;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main menu'
+    'footer footer footer footer footer menu';
+}
+
+
+.header{
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    background-color:rgb(234, 180, 119);
+    width: 100%;
+    grid-area: header;
+    color: white;
+}
+
+#dateTime{
+    color: black;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+}
+
+.header table{
+    text-align: center;
+    font-size: 3vw;
+    padding-left: 1vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.header img{
+    height: 7%;
+    width: 7%; 
+    padding-left: 1%;
+    float: left;
+}
+
+.menu{
+    position: fixed;
+    right:0%;
+    grid-area: menu;
+    background-color: rgb(184, 149, 110);
+    text-align: center;
+    height: 20vw;
+    font-size:larger;
+    width: 20vw;
+    font-family: cursive;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    background-color: rgb(184, 149, 110);
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.menu li a:hover{
+    background-color: rgb(243, 144, 58);
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(93, 63, 21);
+    color: white;
+    text-indent: 10px;
+    text-align: left;
+    grid-area: footer;
+ }
+
+.content{
+    position: relative;
+    text-align: center;
+    grid-area: main;
+    margin-right: 20vw;
+    padding: 1vw;
+}
+
+.animals{
+    border-radius: 8px;
+    border: solid;
+    border-color: beige;
+    margin: 10px;
+    justify-content: center;
+}
+
+.formcat, .formdog{
+    text-align: left;
+    box-sizing: border-box;
+    font-size:large;
+    background-color: rgb(245, 235, 220);
+    border-radius: 8px;
+    border-width: 1vw;
+    border: solid;
+    margin: 10px;
+    padding: 2px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+p, ol{
+    text-align: left;
+    margin-left: 1vw;
+    font-family: cursive;
+}
+
+.login-button, .create-button{
+    background-color: rgb(164, 131, 46);
+    color: white;
+    font-weight: bold;
+    width: 95px;
+    height: 26px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button a, .create-button a{
+    text-decoration: none;
+    color:black;
+}
+
+.longInput{
+    width: 500px;
+}
+
+textarea{
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.contact{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    margin-left: 1vw ;
+}
+
+.statement{
+    text-decoration: none;
+    color:white;
+}
+
+.contact{
+    background-color:rgb(232, 219, 187);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    text-align: center;
+}
+
+.imagesforhome{
+    width: 100%;
+}
+
+.pets{
+    border-radius: 8px;
+    border: 4px solid black;
+    padding: 1%;
+    margin: 2%;
+    background-color: rgb(245, 237, 220);
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(93, 63, 21);
+}
+
+.petsimages {
+    font-family: cursive;
+}
+.petsimages img{
+    width: 20vw;
+    height: 20vw;
+    float: left;
+}
+
+.buttons {
+    background-color: rgb(231, 196, 147);
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 0%;
+}
+
+.namepet {
+    width: 400%;
+    font-size: 300%;
+}

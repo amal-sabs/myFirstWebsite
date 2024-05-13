@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adopt a Dog/Cat</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="stylesheetwebsite.css">
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <form id = "login" action = "/login" method = "POST">
+                    <p>Enter your User ID: <input type ="text" name = "username" id ="username"></p>
+                    <p>Enter your password: <input type ="password" name = "password" id = "password"></p>
+                    <input class = "buttons" type ="submit" value = "Log in">
+                </form>
+            </div>
+
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

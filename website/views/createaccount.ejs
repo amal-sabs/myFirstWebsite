@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adopt a Dog/Cat</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="stylesheetwebsite.css">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+            <div class = "content">
+                <form id = "create" onsubmit='return validateCreate()' method ="POST">
+                    <p>Enter your new User ID: <input type ="text" name = "username" id ="username" placeholder="Must only contain upper and lower case letters and digits" class ="longInput"></p>
+                    <p>Enter your new password: <input type ="password" name = "password" id = "password" placeholder="Must contain minimum 4 characters (letters and digits only)" class = "longInput"></p>
+                    <input type ="submit" value = "Create an Account" class = "buttons">
+                </form>
+            </div>
+
+                        
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

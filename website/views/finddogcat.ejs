@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adopt a Dog/Cat</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <form id = "formanimal" onsubmit = 'return validateForm()' method="POST">
+                    <fieldset class ="formcat">
+                        <legend>Form to find an animal</legend>
+                        <label for="petType">Pet Type:</label>
+                        <select id="petType" name="petType">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                        </select>
+                        <p>Which breed would you like to adopt?
+                            <br>
+                            <label>
+                                <input type = "radio" name = "breed" value = "Siamese" id = "siamese">
+                                Siamese Cat
+                            </label>
+                            <label>
+                                <input type = "radio" name = "breed" value = "British Shorthair" id = "britishShorthair">
+                                British Shorthair Cat
+                            </label>
+                            <label>
+                                <input type = "radio" name = "breed" value = "Persian" id = "persian">
+                                Persian Cat
+                            </label>
+                            <br>
+                            <label>
+                                <input type = "radio" name = "breed" value = "German Shepherd">
+                                German Shepherd Dog
+                            </label>
+                            <label>
+                                <input type = "radio" name = "breed" value = "Bulldog">
+                                Bulldog
+                            </label>
+                            <label>
+                                <input type = "radio" name = "breed" value = "Chihuahua">
+                                Chihuahua Dog
+                            </label>
+                            <label>
+                                <input type = "radio" name = "breed" value = "Does not matter" id = "notMatter">
+                                Does not matter
+                            </label>
+                        </p>
+                        <p>Select the preferred age of your animal:
+                            <select name = "age category cat">
+                                <option> Less than 2 </option>
+                                <option> Between 2 and 8 </option>
+                                <option> Between 8 and 14</option>
+                                <option> Does not matter </option>
+                            </select>
+                        </p>
+                        <p>Select the preferred gender of your animal:
+                            <select name = "gender category cat">
+                                <option> Male </option>
+                                <option> Female </option>
+                                <option> Does not matter </option>
+                            </select>
+                        </p>
+                        <label for="petAlongDog">Does the pet need to get along with other dogs?</label>
+                        <input type="checkbox" id="petAlongDog" name="petAlongDog" value="True">
+                        <br><br>
+            
+                        <label for="petAlongCat">Does the pet need to get along with other cats?</label>
+                        <input type="checkbox" id="petAlongCat" name="petAlongCat" value="True">
+                        <br><br>
+            
+                        <label for="petAlongKids">Does the pet need to get along with kids?</label>
+                        <input type="checkbox" id="petAlongKids" name="petAlongKids" value="True">
+                        <br><br>
+                            <input class = "buttons" type = "submit" value = "Submit">
+                            <input class = "buttons" type = "reset" value = "Reset">
+                    </fieldset>
+                </form>
+            </div>
+
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+                
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <h3 class ="contact info">Contact information</h3>
+                <div class = "contact">
+                    <p>Name: Amal Sabsabi</p>
+                    <p>Student ID: 40273376</p>
+                    <p>Email: amalsabsabi@icloud.com</p>
+                    <p>Phone number: (438) 835-8118</p>
+                </div>
+
+            </div>
+            
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>

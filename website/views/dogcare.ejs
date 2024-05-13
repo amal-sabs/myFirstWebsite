@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Adopt a Dog/Cat</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href ="<%= '/stylesheetwebsite.css' %>">
+        <script defer src = "<%= '/scriptwebsite.js' %>"></script>
+    </head>
+
+    <body> 
+        <div class = "container">
+            <%- include('header.ejs') %>
+            <%- include('menu.ejs') %>
+
+            <div class = "content">
+                <p>Under the Animal Welfare Act, pet owners are now legally obliged to care for their pets properly as most owners already do by providing the following five basic welfare needs:</p>
+                <ol type = "1">
+                    <li>A suitable place to live.</li>
+                    <li>A healthy diet, including fresh  clean water.</li>
+                    <li>The ability to behave normally.</li>
+                    <li>Appropriate company, including any need to be housed with, or apart from, other animals.</li>
+                    <li>Protection from pain, suffering, injury and disease</li>
+                </ol>
+                <p>You can find more information by clicking on the followinf link: <a href = "https://www.rspca.org.uk/documents/1494939/7712578/Dog_How+to+take+care+of+your+dog+booklet_secure.pdf/1400bb54-0c81-3090-1447-92dddd548fd4?t=1550831996014" target = "_blank">How to take of your dog booklet</a>.</p>
+                <p>Find more general instructions on to care for a dog by clicking on the following links:</p>
+                <p><a href ="https://www.aspca.org/pet-care/dog-care/general-dog-care" target = "_blank">General Dog Care by ASPCA</a></p>
+                <p><a href = "https://www.forbes.com/advisor/ca/pet-insurance/dog-care-tips/" target = "_blank">25 Dog Care Tips for Pet Parents by Forbes Advisor</a></p>
+                <p><a href = "https://www.wikihow.com/Care-for-Dogs" target = "_blank">How to Care for Dogs by WikiHow</a></p>
+            </div>
+
+            <%- include('footer.ejs') %>
+        </div>
+        <script src = "scriptwebsite.js"></script>
+    </body>
+</html>
